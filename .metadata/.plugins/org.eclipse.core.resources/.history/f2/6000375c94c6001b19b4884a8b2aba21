@@ -1,0 +1,15 @@
+package modelo;
+
+public class Cuadrado  {
+
+	public int calcularArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int calcularPerimetro() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

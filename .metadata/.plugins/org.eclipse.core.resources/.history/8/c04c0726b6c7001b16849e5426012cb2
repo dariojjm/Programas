@@ -1,0 +1,28 @@
+package modelo;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner entrada=new Scanner(System.in);
+		System.out.println("Ingrese el valor del lado");
+		int op=0;
+		do {
+			System.out.println("Menu Principal \n 1.-Cuadrado \n 2.-Cubo \n 3.-Salir");
+			op=entrada.nextInt();
+			switch (op) {
+			case 1:
+
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			default:
+				break;
+			}
+		} while (op!=3);
+	}
+
+}

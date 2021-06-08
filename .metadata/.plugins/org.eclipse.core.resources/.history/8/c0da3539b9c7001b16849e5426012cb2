@@ -1,0 +1,22 @@
+package modelo;
+
+public class Cubo extends Cuadrado {
+public Cubo(int lado) {
+		super(lado);
+		// TODO Auto-generated constructor stub
+	}
+@Override
+public int calcularArea() {
+	// TODO Auto-generated method stub
+	return super.calcularArea();
+}
+@Override
+	public int calcularPerimetro() {
+		// TODO Auto-generated method stub
+		return super.calcularPerimetro();
+	}
+public int calcularVolumen() {
+	return 0;
+	
+}
+}

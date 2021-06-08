@@ -1,0 +1,17 @@
+package modelo;
+
+public class Cuadrado  {
+
+	@Override
+	public int calcularArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int calcularPerimetro() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,48 @@
+package modelo;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner entrada=new Scanner(System.in);
+		System.out.println("Ingrese el valor del lado");
+		int lado=entrada.nextInt();
+		if (lado>0) {
+			Cubo cubo=new Cubo(lado);
+
+			int op=0;
+			do {
+				System.out.println("Menu Calculos \n 1.-Calcular Area \n 2.-Calcular Perimetro \n 3.-Calcular Volumen \n 4.-Canselar 5.-Salir \n Valor del Lado :"+lado);
+				op=entrada.nextInt();
+				int ops=0;
+
+				switch (op) {
+				case 1:
+					do {
+						System.out.println("La area del cubo es: "+cubo.calcularArea());
+						System.out.println("Menu Opcion\n 1.-Menu Calculos  \n 2.-Salir al Inicio \n Valor del Lado :"+lado);
+						ops=entrada.nextInt();
+					} while (ops>0&&ops<3);
+					
+					break;
+				case 2:
+					do {
+						System.out.println("La area del cubo es: "+cubo.calcularArea());
+						System.out.println("Menu Opcion\n 1.-Menu Calculos  \n 2.-Salir al Inicio \n Valor del Lado :"+lado);
+						ops=entrada.nextInt();
+					} while (ops>0&&ops<3);
+					break;
+				case 3:
+					break;
+				default:
+					break;
+				}
+				if (op==2) {
+					op=3;
+				}
+			} while (op!=3);
+		}
+	}
+
+}

@@ -1,0 +1,63 @@
+package modelo;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner entrada=new Scanner(System.in);
+		System.out.println("Ingresa un numero entre 1 y 1000");
+		int numero=entrada.nextInt();
+		String romanos="";
+		int cont=0;
+		int num=0;
+		if (numero>0&&numero<=1000) {
+			if(numero==1000) {
+				romanos=romanos.concat("M");
+			}else {
+				num = numero / 100%10;
+				switch (num) {
+				case 1:
+					romanos=romanos.concat("C");
+					break;
+				case 2:
+					romanos=romanos.concat("CC");
+
+					break;
+				case 3:
+					romanos=romanos.concat("CCC");
+
+					break;	
+				case 4:
+					romanos=romanos.concat("CD");
+
+					break;	
+				case 5:
+					romanos=romanos.concat("D");
+
+					break;	
+				case 6:
+					romanos=romanos.concat("DC");
+
+					break;	
+				case 7:
+					romanos=romanos.concat("DCC");
+
+					break;
+				case 8:
+					romanos=romanos.concat("DCCC");
+
+					break;
+				case 9:
+
+					break;
+				default:
+					break;
+				}
+			}
+
+		}
+
+	}
+
+}

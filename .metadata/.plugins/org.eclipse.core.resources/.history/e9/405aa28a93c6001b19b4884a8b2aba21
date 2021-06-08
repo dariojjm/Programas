@@ -1,0 +1,10 @@
+package modelo;
+
+public class Cuadrado {
+public void uno() {
+	
+}
+public void dos() {
+	
+}
+}
